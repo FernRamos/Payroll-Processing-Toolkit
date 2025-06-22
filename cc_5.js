@@ -37,6 +37,7 @@ function processPayroll(employee) {
     basePay: basePay.toFixed(2),
     overtimePay: overtimePay.toFixed(2),
     grossPay: grossPay.toFixed(2),
+    tax: tax.toFixed(2),
     netPay: netPay.toFixed(2)
   };
 }
@@ -56,6 +57,7 @@ for (const employee of employees) {
       <li>Base Pay: $${payroll.basePay}</li>
       <li>Overtime Pay: $${payroll.overtimePay}</li>
       <li>Gross Pay: $${payroll.grossPay}</li>
+      <li>Tax (15%): $${payroll.tax}</li>
       <li>Net Pay: $${payroll.netPay}</li>
     </ul>
   `;
