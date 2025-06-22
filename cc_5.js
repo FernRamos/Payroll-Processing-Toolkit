@@ -49,16 +49,25 @@ for (const employee of employees) {
   const payroll = processPayroll(employee);
   console.log(payroll);
 
+  // ✅ Detailed console output
+  console.log(`Payroll for ${payroll.name}`);
+  console.log(`  Base Pay: $${payroll.basePay}`);
+  console.log(`  Overtime Pay: $${payroll.overtimePay}`);
+  console.log(`  Gross Pay: $${payroll.grossPay}`);
+  console.log(`  Tax: $${payroll.tax}`);
+  console.log(`  Net Pay: $${payroll.netPay}`);
+  console.log("----------------------------");
+
  // Create a paragraph element for each employee's payroll
   const employeeDiv = document.createElement("div");
   employeeDiv.innerHTML = `
     <h3>${payroll.name}</h3>
     <ul>
-      <li><stong>Base Pay:</stong> $${payroll.basePay}</li>
-      <li><stong>Overtime Pay:</stong> $${payroll.overtimePay}</li>
-      <li><stong>Gross Pay:</stong> $${payroll.grossPay}</li>
-      <li><stong>Tax (15%):</stong> $${payroll.tax}</li>
-      <li><stong>Net Pay:</stong> $${payroll.netPay}</li>
+      <li><strong>Base Pay:</strong> $${payroll.basePay}</li>
+      <li><strong>Overtime Pay:</strong> $${payroll.overtimePay}</li>
+      <li><strong>Gross Pay:</strong> $${payroll.grossPay}</li>
+      <li><strong>Tax (15%):</strong> $${payroll.tax}</li>
+      <li><strong>Net Pay:</strong> $${payroll.netPay}</li>
     </ul>
   `;
   outputDiv.appendChild(employeeDiv);
