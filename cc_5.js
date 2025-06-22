@@ -54,11 +54,11 @@ for (const employee of employees) {
   employeeDiv.innerHTML = `
     <h3>${payroll.name}</h3>
     <ul>
-      <li>Base Pay: $${payroll.basePay}</li>
-      <li>Overtime Pay: $${payroll.overtimePay}</li>
-      <li>Gross Pay: $${payroll.grossPay}</li>
-      <li>Tax (15%): $${payroll.tax}</li>
-      <li>Net Pay: $${payroll.netPay}</li>
+      <li><stong>Base Pay:</stong> $${payroll.basePay}</li>
+      <li><stong>Overtime Pay:</stong> $${payroll.overtimePay}</li>
+      <li><stong>Gross Pay:</stong> $${payroll.grossPay}</li>
+      <li><stong>Tax (15%):</stong> $${payroll.tax}</li>
+      <li><stong>Net Pay:</stong> $${payroll.netPay}</li>
     </ul>
   `;
   outputDiv.appendChild(employeeDiv);
