@@ -49,7 +49,7 @@ for (const employee of employees) {
   const payroll = processPayroll(employee);
   console.log(payroll);
 
-  // ✅ Detailed console output
+  // Detailed console output
   console.log(`Payroll for ${payroll.name}`);
   console.log(`  Base Pay: $${payroll.basePay}`);
   console.log(`  Overtime Pay: $${payroll.overtimePay}`);
